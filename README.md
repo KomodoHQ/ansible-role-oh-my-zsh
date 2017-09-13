@@ -14,7 +14,7 @@ Role Variables
 - zsh_custom_dir: ~/.oh-my-zsh/custom
     - This variable is used in other roles which depend on this role.
 
-- oh_my_zsh_theme: hnakamur
+- oh_my_zsh_theme: robbyrussell
     - The theme
 
 Dependencies
@@ -27,7 +27,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: hnakamur.oh-my-zsh, oh_my_zsh_theme: cloud }
+         - { role: KomodoHQ.oh-my-zsh, oh_my_zsh_theme: robbyrussell }
 
 License
 -------
