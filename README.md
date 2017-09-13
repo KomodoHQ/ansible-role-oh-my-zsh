@@ -27,7 +27,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: KomodoHQ.oh-my-zsh, oh_my_zsh_theme: robbyrussell }
+         - { role: ansible-role-oh-my-zsh, oh_my_zsh_theme: robbyrussell }
 
 License
 -------
