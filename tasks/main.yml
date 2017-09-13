@@ -3,6 +3,11 @@
 
 - template: src=zshrc.j2 dest=~/.zshrc
 
+- name: Create custom directory
+  file:
+      path: "{{ zsh_custom_dir }}"
+      state: directory
+
 - template: src=hnakamur.zsh-theme.j2 dest={{ zsh_custom_dir }}/hnakamur.zsh-theme
 
 - template: src=theme.zsh.j2 dest={{ zsh_custom_dir }}/theme.zsh
